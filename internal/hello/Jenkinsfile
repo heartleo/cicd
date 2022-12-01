@@ -1,13 +1,9 @@
 pipeline {
    agent any
 
-    tools {
-        go 'go1.18'
-    }
-
-    environment {
-
-    }
+   tools {
+        go 'go1.18.8'
+   }
 
    stages {
       stage('pull code') {
